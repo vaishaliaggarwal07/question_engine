@@ -38,7 +38,7 @@ const handleChange = (e) => {
       return;
     }
     try{
-      const response = await fetch('http://localhost:3000/create_user',{
+      const response = await fetch('http://20.55.109.32:8080/create_user',{
         method:'POST',
         headers:{
           'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const handleChange = (e) => {
         </div>
 <div className='right-text'>
         <p className='p'>Have an Account? </p>
-        <p className='p span'><a className="loginsignuplink"href="#">Log In</a></p>
+        <p className='p span'><a className="loginsignuplink"href="#"onClick={() => navigate('/login')}>Log In</a></p>
         </div>
       </div>
       {/* Your signup form content goes here */}

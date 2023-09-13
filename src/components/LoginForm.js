@@ -38,7 +38,7 @@ function LoginForm() {
       return;
     }
       try{
-        const response = await fetch('http://localhost:3000/login_user',{
+        const response = await fetch('http://20.55.109.32:8080/login_user',{
           method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ function LoginForm() {
           const data = await response.json();
           const {token} = data;
           localStorage.setItem('token',token);
-          navigate('/dashboard');
+          navigate('/dashboard/campaigns');
         }else{
           const errorData = await response.json();
           console.log('login failed:', errorData.message);
@@ -106,7 +106,7 @@ function LoginForm() {
           />
           
         </div>
-<p className='forgot'><a className="forgotpasslink"href="#">Forgot password?</a></p>
+<p className='forgot'><a className="forgotpasslink"href="#"onClick={() => navigate('/forgetpasswordpage')}>Forgot password?</a></p>
         <div className="submit-button">
     <button type="submit" onClick={handleSubmit}>Log In</button>
   </div>

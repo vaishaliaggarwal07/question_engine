@@ -4,27 +4,27 @@ import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 import LoginPage from '../components/LoginPage';
 import 'font-awesome/css/font-awesome.min.css';
 import Dashboard from './Dashboard';
-import Campaign from './Campaigns';
-import Questionaires from './Questionaires';
-import Questions from './Questions';
-import Clients from './Clients';
 
+import ForgetpassPage from './ForgetpassPage';
 function App() {
   return (
     <Router>
-      
+      <Dashboard />
       <Routes>
         <Route  path="/" element={<SignupPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        
-       
-       
+        <Route path="/forgetpasswordpage" element={<ForgetpassPage />} />
+        {/* <Route path="/dashboard/editcampaign" element={<Editcampaign />} /> */}
 
-        <Route path="/campaigns" element={<Campaign />} />
-        <Route path="/questionaires" element={<Questionaires />} />
-        <Route path="/questions" element={<Questions />} />
-        <Route path="/clients" element={<Clients />} />
+       
+        {/* <Route
+          path="/dashboard/*" // This matches all routes starting with "/dashboard/"
+          element={<Dashboard />}
+        />
+        <Route path="/dashboard/campaigns" element={<Campaign />} />
+        <Route path="/dashboard/questionaires" element={<Questionaires />} />
+        <Route path="/dashboard/questions" element={<Questions />} />
+        <Route path="/dashboard/clients" element={<Clients />} /> */}
         
         </Routes>
 

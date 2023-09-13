@@ -88,7 +88,7 @@ box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
 
 .h3-heading{
   color: #000;
-font-family: Roboto;
+font-family: 'Roboto';
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -107,7 +107,7 @@ margin-bottom: 0;
 
 .span{
   color: #F39D23;
-font-family: Roboto;
+font-family: 'Roboto';
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -125,7 +125,7 @@ form{
 }
 .heading{
   color: #000;
-font-family: Roboto;
+font-family: 'Roboto';
 font-size: 35px;
 font-style: normal;
 font-weight: 500;
@@ -138,7 +138,7 @@ padding-bottom: 0;
 
 label{
   color: #000;
-font-family: Roboto;
+font-family: 'Roboto';
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -192,7 +192,7 @@ box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.30);
 }
 .forgot{
   color: #AD3113;
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -211,23 +211,26 @@ box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.30);
 }
 
 .top-bar{
+  
   border: 0.81px solid #FFD3A3;
 background: #FFEED0;
 box-shadow: 0px 3.23843px 3.23843px 0px rgba(255, 211, 163, 0.25);
-padding: 10px;
-padding-left: 30px;
+/* padding: 10px; */
+padding-top: 5px;
+padding-bottom: 3px;
+padding-left: 2px;
 display: flex;
 justify-content: space-between;
 align-items: center;
 }
 .menu-icon{
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 .logo{
   
-height: 47.32px;
-padding-left: 20px;
+height: 42px;
+padding-left: 15px;
 }
 .search{
  
@@ -239,7 +242,7 @@ border-radius: 7.185px;
 border: 0.718px solid #E4E4F2;
 background: #FFF;
 width: 200px;
-height: 25px;
+height: 15px;
 box-shadow: 0px 0.44097px 3.52778px 0px rgba(0, 0, 0, 0.25);
 }
 .search-container{
@@ -264,21 +267,28 @@ height: 11.496px;
   font-size: 12px;
 }
 .setting{
-  width: 30px;
-height: 30px;
+  width: 25px;
+height: 25px;
 flex-shrink: 0;
 padding-left: 10px;
 padding-right: 20px;
 }
 .username{
   width: 72px;
-height: 31px;
+height: 25px;
+font-family: 'Roboto';
 margin-right: 50px;
+font-size: 14px;
   background-color: #FFF;
 filter: drop-shadow(0px 0.4000000059604645px 4px rgba(0, 0, 0, 0.25));
 border-radius: 10px;
 padding-left: 10px;
 padding-right: 10px;
+padding-top: 5px;
+
+justify-content: center;
+align-items: center;
+text-align: center;
 }
 .profile-img{
   padding-left: 100px;
@@ -286,10 +296,11 @@ padding-right: 10px;
 }
 .container{
   display: flex;
+  width: 300px;
 }
 
 .main{
-  width: 100%;
+  width: 100vw;
   padding: 20px;
 }
 .sidebar{
@@ -302,93 +313,107 @@ display: inline;
 }
 .top-section{
   /* display: flex; */
+  justify-content: center;
   align-items: center;
-  padding: 80px 15px;
 }
 .link{
   display: flex;
   color: #000;
-font-family: Roboto;
+font-family: 'Roboto';
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 133.333% */
 letter-spacing: -0.198px;
 text-decoration: none;
-padding: 10px 15px;
-gap:15px;
+padding: 10px 0pxx;
+padding-bottom: 10px;
+padding-top: 10px;
+padding-right: 2px;
+padding-left: 2px;
+gap:3px;
+/* border-right: 1px solid #F9A826; */
 }
 .link:hover{
   background: rgba(255, 238, 208, 0.83);
   transition: all 0.5s;
+
 }
 .active{
   background: rgba(255, 238, 208, 0.83);
+  width: 95%;
+  /* border-right: 1px solid #F9A826; */
+
 }
 .icon-img {
-  width: 30px; /* Adjust this value to your desired size */
-  height: 30px; /* Adjust this value to your desired size */
+  width: 25px; /* Adjust this value to your desired size */
+  height: 25px; /* Adjust this value to your desired size */
 }
 .link-text{
   color: #000;
-font-family: Roboto;
+font-family: 'Roboto';
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
 letter-spacing: -0.176px;
 }
+
 .dashboard{
   background-color: #fff4e3;
   /* display: flex; */
 }
 
-/* .campaign{
-  display: flex;
-} */
+.hamburger-image{
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 20px;
+ /* padding: 30px; */
+ padding-bottom: 10px;
+}
 .campaign-content{
-  width: 100%;
- 
+  background-color: #fff4e3;
+  width: 100vw;
 }
 .campaign-container{
   background: linear-gradient(90deg, #FFEED0 -2.03%, #ffffff00 109.37%);
  
-  width: 100%;
-  height: 10%;
-
+  width: 94vw;
+  height: 15%;
   padding: 20px;
   
 }
 .campaign-text{
   color: #F9A826;
 text-align: left;
-font-family: "Roboto";
-font-size: 25px;
+font-family: 'Roboto';
+font-size: 27px;
 font-style: normal;
-font-weight: 500;
+font-weight: 600;
 line-height: normal;
-
+margin-left: 70px;
+margin-top: 0;
+margin-bottom: 0;
 }
 
 .image-container{
   width: 100%;
-
+display: flex;
 }
 
 .campaign-image{
-  display: flex;
   justify-content: center;
   align-items: center;
-  
+  text-align: center;
   width: 300px;
   height: 200px;
-  padding-left: 600px;
-  padding-right: 50px;
-  padding-top: 80px;
+  padding-left: 560px; 
+   padding-right: 50px;
+  padding-top: 80px; 
 }
 
 .campaign-button{
- margin-left: 650px;
+ margin-left: 610px;
  margin-top: 50px;
  align-items: center;
  justify-content: center; 
@@ -399,3 +424,631 @@ border: 1.29px solid #F9A826;
 background: #FFF;
 box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.forget-para{
+  color: #000;
+font-family: 'Roboto';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.198px;
+padding: 30px;
+padding-top: 0;
+}
+.forget-heading{
+  padding-top: 50px;
+
+}
+.forgot-button{
+  padding-top: 50px;
+}
+
+
+.sidebar-div{
+  display: flex;
+}
+
+.dashboard-content-container {
+  display: flex;  
+}
+
+
+.create-client-heading{
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
+text-align: center;
+font-family: 'Roboto';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+width: 90px;
+height: 37px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+margin-left: 35px;
+}
+.create-campaign-heading{
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
+text-align: center;
+font-family: 'Roboto';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+width: 90px;
+height: 37px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+margin-left: 70px;
+}
+.create-client-container{
+  width: 100vw;
+  height: 100%;
+}
+.create-new-client-text-image{
+  
+  display: flex;
+  margin-left: 230px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.create-new-client-text-image img{
+/* display: flex; */
+/* background-color: red; */
+width: 30px;
+height: 40px;
+}
+.create-new-client-text-image .create-client-heading{
+/* display: flex; */
+/* background-color: red; */
+width: 130px;
+height: 30px;
+padding: 0;
+font-size: 15px;
+font-weight: 700;
+margin-left: 0;
+
+
+}
+.create-new-campaign-text-image .create-campaign-heading{
+  /* display: flex; */
+  /* background-color: red; */
+  width: 130px;
+  height: 30px;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 0;
+  
+  
+  }
+.create-client-input{
+  border-radius: 10px;
+border: 1px solid rgba(0, 0, 0, 0.40);
+background-color: transparent;
+height: 30px;
+width: 400px;
+
+}
+.form-div{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-client-form{
+  width: 70%;
+  align-items: center;
+}
+.create-client-form-headings{
+
+font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-bottom: 5px;
+}
+
+.create-client-button{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.cancel-button{
+  border-radius: 10px;
+background: #FFF;
+display: flex;
+width: 300px;
+height: 40px;
+/* padding: 0px px; */
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+color: #000;
+font-family: 'Roboto';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 160px;
+/* margin-right: 10px; */
+}
+
+.create-button{
+  display: flex;
+width: 300px;
+height: 40px;
+/* padding: 0px 64px; */
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 10px;
+background: #F39D23;
+font-family: 'Roboto';
+color: #FFF;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 40px;
+}
+
+select{
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.custom-select  {
+  /* Reset default styles */
+  appearance: none ; 
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  /* Add your custom styles here */
+  /* For example, you can set the width, border, padding, etc. */
+  border-radius: 10px;
+border: 1px solid rgba(0, 0, 0, 0.40);
+background-color: transparent;
+height: 30px;
+width: 400px;
+}
+.create-client-button-2{
+  margin-top: 20px;
+  margin-left: 90px;
+  border-radius: 16px;
+border: 1.29px solid #F9A826;
+background: #FFF;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+display: flex;
+height: 40px;
+padding: 10px 9px 10.229px 20px;
+justify-content: center;
+align-items: center;
+width: 150px;
+color: #F39D23;
+text-align: center;
+font-family: Roboto;
+/* font-size: 16px; */
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.create-client-button-2 img{
+  padding-right: 20px;
+}
+
+.client-details-heading{
+  display :flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 7.959px;
+border: 0.67px solid #D08417;
+background: #FFF;
+/* width: 1454px; */
+height: 52px;
+flex-shrink: 0;
+margin: 0;
+padding: 0;
+/* padding-left: 15px;
+padding-right: 15px; */
+}
+.client-display-big-container{
+  margin-top: 25px;
+  margin-left: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.client-display-container{
+  width: 85%;
+  
+}
+
+.client-button{
+  border-radius: 7.959px;
+border: 0.67px solid #F39D23;
+background: #FFF;
+display: flex;
+align-items: center;
+  justify-content: space-between;
+height: 52px;
+flex-shrink: 0;
+margin: 0;
+margin-bottom: 5px;
+position: relative;
+}
+.client-list{
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3px;
+}
+.fixed-width {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.client-details-item-heading{
+  color: #1C1C1C;
+font-family: Roboto;
+font-size: 13.226px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.client-details-item{
+  color: #000000;
+font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+
+}
+.client-details-item-name{
+  color: #F39D23;
+
+  font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+/* .client-name-image{
+width: 40px;
+height: 40px;
+margin-right: 10px;
+} */
+
+.client-name-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-name-heading img{
+  /* width: 40px;
+  height: 40px; */
+  margin-right: 10px;
+}
+.delete-confirmation-dialog{
+  z-index:999;
+}
+
+.action-menu{
+  border-radius: 10px;
+border: 1px solid #F39D23;
+background: #FFF;
+width: 187px;
+height: 120px;
+flex-shrink: 0;
+z-index: 1;
+position: absolute;
+top:80%;
+left: 30%;
+}
+.campaign-action-menu{
+height: 155px;
+width: 137px;
+}
+.action-menu-button-container{
+  width: 100%;
+  height: 100%;
+  display: block;
+  align-items: start;
+  text-align: start;
+}
+.action-menu-button{
+  padding: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+font-family: 'Roboto';
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+
+.create-new-campaign-text-image{
+  display: flex;
+  margin-left: 230px;
+  margin-top: 50px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create-new-campaign-text-image img{
+  /* display: flex; */
+  /* background-color: red; */
+  width: 30px;
+  height: 40px;
+  }
+  .create-new-campaign-text-image .create-campaign-heading{
+  /* display: flex; */
+  /* background-color: red; */
+  width: 200px;
+  height: 30px;
+  padding: 0;
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  
+  
+  }
+  .create-campaign-button{
+    display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-top: 50px;
+  margin-left: 0px;
+  }
+.client-action-menu{
+  border-radius: 10px;
+  border: 1px solid #F39D23;
+  background: #FFF;
+  width: 180px;
+  height: 160px;
+  flex-shrink: 0;
+  z-index: 1;
+  position: absolute;
+  top:80%;
+right: 0;
+}
+
+.create-campaign-button-2{
+  margin-top: 20px;
+  margin-left: 90px;
+  border-radius: 16px;
+border: 1.29px solid #F9A826;
+background: #FFF;
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+display: flex;
+height: 40px;
+padding: 10px 9px 10.229px 20px;
+justify-content: space-between;
+align-items: center;
+width: 160px;
+color: #F39D23;
+text-align: center;
+font-family: Roboto;
+/* font-size: 16px; */
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.create-campaign-button-2 img{
+  padding-right: 4px;
+}
+.delete-confirmation-dialog{
+  border-radius: 10px;
+  border: 1px solid #F39D23;
+  background: #FFF;
+  width: 300px;
+  height: 140px;
+  flex-shrink: 0;
+  z-index: 1;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.delete-confirmation-button-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.delete-confirmation-button{
+  width: 60px;
+  height: 30px;
+  margin-bottom: 100px;
+}
+/* .textarea::placeholder{
+  color: rgba(0, 0, 0, 0.40);
+font-family: 'Roboto';
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 10px;
+} */
+.bread-crumbs{
+  color: #000;
+font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+padding: 0;
+/* line-height: 24px; 200% */
+/* letter-spacing: -0.132px; */
+margin-left: 70px;
+margin-bottom: 10px;
+margin-top: 0px;
+}
+.bread-crumbs p{
+  margin-bottom: 4px;
+}
+.bread-crumbs-create{
+  padding-top: 20px;
+}
+
+.stroke {
+  text-decoration: none; /* Remove the default underline */
+  position: relative; /* Make the parent element relative */
+}
+
+.stroke::after {
+  content: ""; /* Create an empty pseudo-element */
+  border-bottom: 1.5px solid #F39D23; /* Set the height and color of the underline */
+  width: 90%; /* Make the underline span the width of the parent */
+  position: absolute; /* Position the underline relative to the parent */
+  bottom: 0; /* Position it at the bottom */
+  left: 10px; /* Adjust this value to move the underline to the right */
+  top: 34px;
+}
+.stroke-create {
+  text-decoration: none; /* Remove the default underline */
+  position: relative; /* Make the parent element relative */
+}
+.stroke-create::after{
+  content: ""; /* Create an empty pseudo-element */
+  border-bottom: 1.5px solid #F39D23; /* Set the height and color of the underline */
+  width: 100%; /* Make the underline span the width of the parent */
+  position: absolute; /* Position the underline relative to the parent */
+  bottom: 0; /* Position it at the bottom */
+  left: 10px; /* Adjust this value to move the underline to the right */
+  top: 27px;
+  
+}
+.description-input{
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.40);
+  background-color: transparent;
+  padding: 8px;
+  
+  width: 400px;
+  
+  
+}
+.description-input::placeholder{
+  color: rgba(0, 0, 0, 0.40);
+font-family: 'Roboto';
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.create-client-input::placeholder{
+  color: rgba(0, 0, 0, 0.40);
+font-family: Roboto;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.stroke-create-client{
+  text-decoration: none; /* Remove the default underline */
+  position: relative;
+}
+.stroke-create-client::after{
+  content: ""; /* Create an empty pseudo-element */
+  border-bottom: 1.5px solid #F39D23; /* Set the height and color of the underline */
+  width: 60%; /* Make the underline span the width of the parent */
+  position: absolute; /* Position the underline relative to the parent */
+  bottom: 0; /* Position it at the bottom */
+  left: 20px; /* Adjust this value to move the underline to the right */
+  top: 27px;
+}
+.stroke-create-questionnaire{
+  text-decoration: none; /* Remove the default underline */
+  position: relative;
+}
+.stroke-create-questionnaire::after{
+  content: ""; /* Create an empty pseudo-element */
+  border-bottom: 1.5px solid #F39D23; /* Set the height and color of the underline */
+  width: 130%; /* Make the underline span the width of the parent */
+  position: absolute; /* Position the underline relative to the parent */
+  bottom: 0; /* Position it at the bottom */
+  left: 15px; /* Adjust this value to move the underline to the right */
+  top: 27px;
+}
+.create-questionnaire-heading{
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
+text-align: center;
+font-family: 'Roboto';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+width: 90px;
+height: 37px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+margin-left: 50px;
+}
+
+
+.create-new-client-text-image .create-questionnaire-heading{
+  /* display: flex; */
+  /* background-color: red; */
+  width: 200px;
+  height: 30px;
+  padding: 0;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 0;
+  align-items: start;
+  
+  
+  }
+  .edit-client{
+    margin-left: 70px;
+  }

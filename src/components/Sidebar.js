@@ -1,5 +1,5 @@
 import React from 'react';
-
+import hamburger from '../images/hamburger.png';
 // import './Sidebar.css';
 import Campaign from '../images/campaigns.png';
 import Questionnaire from '../images/questionnaires.png';
@@ -8,26 +8,31 @@ import Questions from '../images/questions.png';
 import { NavLink } from 'react-router-dom';
 import create from '../images/createnew.png';
 import { useState } from 'react';
-function Sidebar({children,isOpen,toggle}) {
+function Sidebar({children}) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
   const [selectedOption, setSelectedOption] = useState("Campaigns");
   const MenuItem = [
     {
-      path:"/campaigns",
+      path:"/dashboard/campaigns",
       name:"Campaigns",
       icon:<img src={Campaign} alt="Campaign" className="icon-img"/>
     },
     {
-      path:"/questionaires",
-      name:"Questionaires",
+      path:"/dashboard/questionaires",
+      name:"Questionnaires",
       icon:<img src={Questionnaire} alt="Questionnaire" className="icon-img"/>
     },
     {
-      path:"/questions",
+      path:"/dashboard/questions",
       name:"Questions",
       icon:<img src={Questions} alt="Questions" className="icon-img"/>
     },
     {
-      path:"/clients",
+      path:"/dashboard/clients",
       name:"Clients",
       icon:<img src={Clients} alt="Clients" className="icon-img"/>
     }
@@ -39,11 +44,17 @@ function Sidebar({children,isOpen,toggle}) {
   };
   
   return (
+    <>
     <div className='container'>
       <div style={
         {
-          width: isOpen ? "200px" : "80px", 
+          width: isOpen ? "200px" : "40px",
       backgroundColor: isOpen ? "inherit" : "red", }}className='sidebar'>
+       
+          <div className="icon hamburger-image icon-img">
+            <img className="hamburger"src={hamburger} onClick={toggleSidebar}/>
+          </div>
+        
         <div className='top-section'>
           {
             MenuItem.map((item, index)=>(
@@ -54,20 +65,12 @@ function Sidebar({children,isOpen,toggle}) {
             ))
           }
         </div>
-<main>{children}</main>
-      </div>
-      <div className='campaign-content'>
-     <div className='campaign-container'>
-      <h3 className='campaign-text'>{selectedOption}</h3>
-      
-     </div>
-     <div className='image-container'>
-     <img src={create} className='campaign-image'/>
-     </div>
-     <button className='campaign-button'>Create New {selectedOption}</button>
 
-</div>
+      </div>
+      { children}
     </div>
+    </>
+
   );
 }
 
